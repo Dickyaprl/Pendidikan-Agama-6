@@ -12,6 +12,40 @@
             background: linear-gradient(135deg, #0f9b0f, #1a2a6c);
             color: #ffffff;
         }
+        <div class="navbar">
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="artikel.html">Artikel</a>
+    </div>
+</div>
+        /* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1000;
+}
+
+.menu a {
+    color: #ffd700;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* biar konten ga ketutup navbar */
+body {
+    padding-top: 70px;
+}
 
         /* PROFIL */
         .profile {

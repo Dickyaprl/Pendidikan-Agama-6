@@ -1,122 +1,103 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Pendidikan Agama 6</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Pendidikan Agama 6</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-            background: linear-gradient(135deg, #0f9b0f, #1a2a6c);
-            color: #ffffff;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #0f9b0f, #1a2a6c);
+    color: #ffffff;
+}
 
-        /* PROFIL */
-        .profile {
-            text-align: center;
-            padding: 30px 20px;
-            background: rgba(0,0,0,0.4);
-        }
+/* NAVBAR */
+.navbar {
+    background: rgba(0,0,0,0.7);
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+.navbar a {
+    color: #ffd700;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
 
-        .profile img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 4px solid #ffd700;
-            margin-bottom: 15px;
-        }
+/* PROFIL */
+.profile {
+    text-align: center;
+    padding: 30px 20px;
+    background: rgba(0,0,0,0.4);
+}
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #ffd700;
+}
+.profile h2 {
+    color: #ffd700;
+}
 
-        .profile h2 {
-            margin: 10px 0 5px;
-            color: #ffd700;
-        }
+/* HEADER */
+header {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1605559424843-9c1b9d4db49a");
+    background-size: cover;
+    padding: 80px 20px;
+    text-align: center;
+}
+header h1 {
+    color: #ffd700;
+}
 
-        .profile p {
-            margin: 5px 0;
-            font-size: 15px;
-        }
+/* CONTAINER */
+.container {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
 
-        header {
-            background: linear-gradient(
-                rgba(0,0,0,0.6),
-                rgba(0,0,0,0.6)
-            ),
-            url("https://images.unsplash.com/photo-1605559424843-9c1b9d4db49a?auto=format&fit=crop&w=1500&q=80");
-            background-size: cover;
-            background-position: center;
-            padding: 80px 20px;
-            text-align: center;
-        }
+.card {
+    background: rgba(255,255,255,0.12);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-            color: #ffd700;
-        }
+.card h2 {
+    color: #ffd700;
+}
 
-        header p {
-            margin-top: 15px;
-            font-size: 18px;
-        }
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
 
-        .container {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .card {
-            background: rgba(255, 255, 255, 0.12);
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 30px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-            animation: fadeIn 1s ease;
-        }
-
-        .card h2 {
-            color: #ffd700;
-            margin-top: 0;
-        }
-
-        .card p, .card li {
-            line-height: 1.8;
-            font-size: 16px;
-        }
-
-        .card img {
-            width: 100%;
-            border-radius: 10px;
-            margin: 15px 0;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: rgba(0,0,0,0.4);
-            font-size: 14px;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0,0,0,0.4);
+}
+</style>
 </head>
 
 <body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#artikel">Artikel</a>
+</div>
 
 <!-- PROFIL BIODATA -->
 <div class="profile">

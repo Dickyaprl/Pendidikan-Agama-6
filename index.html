@@ -11,41 +11,32 @@
             font-family: 'Segoe UI', Tahoma, sans-serif;
             background: linear-gradient(135deg, #0f9b0f, #1a2a6c);
             color: #ffffff;
+            padding-top: 70px;
         }
-<div class="navbar">
-<div class="menu">
-        <a href="index.html">Home</a>
-        <a href="artikel.html">Artikel</a>
-    </div>
-</div>
+
         /* NAVBAR */
-.navbar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    padding: 15px 30px;
-    background: rgba(0,0,0,0.7);
-    display: flex;
-    justify-content: flex-end;
-    z-index: 1000;
-}
+        .navbar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            padding: 15px 30px;
+            background: rgba(0,0,0,0.7);
+            display: flex;
+            justify-content: flex-end;
+            z-index: 1000;
+        }
 
-.menu a {
-    color: #ffd700;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-}
+        .menu a {
+            color: #ffd700;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
 
-.menu a:hover {
-    text-decoration: underline;
-}
-
-/* biar konten ga ketutup navbar */
-body {
-    padding-top: 70px;
-}
+        .menu a:hover {
+            text-decoration: underline;
+        }
 
         /* PROFIL */
         .profile {
@@ -62,16 +53,6 @@ body {
             margin-bottom: 15px;
         }
 
-        .profile h2 {
-            margin: 10px 0 5px;
-            color: #ffd700;
-        }
-
-        .profile p {
-            margin: 5px 0;
-            font-size: 15px;
-        }
-
         header {
             background: linear-gradient(
                 rgba(0,0,0,0.6),
@@ -82,17 +63,6 @@ body {
             background-position: center;
             padding: 80px 20px;
             text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-            color: #ffd700;
-        }
-
-        header p {
-            margin-top: 15px;
-            font-size: 18px;
         }
 
         .container {
@@ -106,51 +76,30 @@ body {
             border-radius: 12px;
             padding: 25px;
             margin-bottom: 30px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-            animation: fadeIn 1s ease;
-        }
-
-        .card h2 {
-            color: #ffd700;
-            margin-top: 0;
-        }
-
-        .card p, .card li {
-            line-height: 1.8;
-            font-size: 16px;
         }
 
         .card img {
             width: 100%;
             border-radius: 10px;
-            margin: 15px 0;
-        }
-
-        ul {
-            padding-left: 20px;
         }
 
         footer {
             text-align: center;
             padding: 15px;
             background: rgba(0,0,0,0.4);
-            font-size: 14px;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
     </style>
 </head>
 
 <body>
+
+<!-- ✅ NAVBAR (PINDAH KE SINI, JANGAN DI STYLE) -->
+<div class="navbar">
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="artikel.html">Artikel</a>
+    </div>
+</div>
 
 <!-- PROFIL BIODATA -->
 <div class="profile">
